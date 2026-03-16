@@ -1,7 +1,7 @@
 package org.example;
 
 public class Main {
-    static void main() {
+    public static void main(String[] args) {
         Worker worker1 = new Worker("Maria", "Gomez", 10);
         OnlineWorker worker2 = new OnlineWorker("Marcos", "Gutierrez", 10);
         OnsiteWorker worker3 = new OnsiteWorker("Alejandro", "Cortés", 10);

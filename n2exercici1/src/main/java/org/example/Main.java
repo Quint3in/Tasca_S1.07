@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 
 public class Main {
-    static void main() {
+    public static void main(String[] args) {
         Person person = new Person("Maria", "Gomez", 28);
         try {
             Path output = JsonFileSerializer.serialize(person);
