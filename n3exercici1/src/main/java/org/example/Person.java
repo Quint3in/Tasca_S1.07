@@ -1,10 +1,10 @@
 package org.example;
 
-@JsonSerializable(directory = "n2exercici1/")
+@JsonSerializable(directory = "n3exercici1/")
 public class Person {
-    private String name;
-    private String surname;
-    private int age;
+    private final String name;
+    private final String surname;
+    private final int age;
 
     public Person(String name, String surname, int age) {
         this.name = name;

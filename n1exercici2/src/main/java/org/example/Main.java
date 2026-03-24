@@ -11,10 +11,10 @@ public class Main {
         System.out.println(worker3.calculateSalary(10));
 
         @SuppressWarnings("deprecation")
-        double internetFee = worker2.calculateInternetFee();
-        System.out.println(internetFee);
+        double deprecatedOnlineWorkerSalary = worker2.calculateOnlineWorkerSalary(10);
+        System.out.println(deprecatedOnlineWorkerSalary);
         @SuppressWarnings("deprecation")
-        double hours = worker3.calculateHours(10);
-        System.out.println(hours);
+        double deprecatedOnSiteWorkerSalary = worker3.calculateOnSiteWorkerSalary(10);
+        System.out.println(deprecatedOnSiteWorkerSalary);
     }
 }

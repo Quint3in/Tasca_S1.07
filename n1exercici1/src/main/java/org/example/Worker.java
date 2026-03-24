@@ -1,9 +1,9 @@
 package org.example;
 
 public class Worker {
-    private String name;
-    private String surname;
-    private double pricePerHour;
+    private final String name;
+    private final String surname;
+    private final double pricePerHour;
 
     public Worker(String name, String surname, double pricePerHour) {
         this.name = name;

@@ -13,8 +13,16 @@ public class OnlineWorker extends Worker {
         return (0.95 * super.calculateSalary(hours)) + FLAT_INTERNET_FEE;
     }
 
+    /**
+     *This method calculates the hours without INTERNET FEE.
+
+     @deprecated This method is obsolete.
+     Use {@link #calculateSalary(int hoursMonth)} instead to include the INTERNET bonus.
+     @param hours number of hours the employer has worked
+     @return the salary without extras
+     */
     @Deprecated
-    public double calculateInternetFee() {
-        return FLAT_INTERNET_FEE;
+    public double calculateOnlineWorkerSalary(int hours) {
+        return 0.95 * super.calculateSalary(hours);
     }
 }
